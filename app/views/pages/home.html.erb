@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Evergreen HOA</title>
+  </head>
+  <body>
+
+
+
+    <!--    jumbotron -->
+          <div class="jumbotron jumbotron-fluid bg-info text-white ">
+              <div class="container text-sm-center pt-5">
+                <h3 class="display-4 ">Evergreen HOA  </h3>
+                <h3 class="display-5">Cary, North Carolina </h3>
+                <h4 class="display-2">Welcome! </h4>
+                <%= link_to 'Register as a New Neighbor', new_user_registration_path, class: "btn btn-light btn-lg text-black nav-link"  %>
+              </div>
+          </div>
+
+    <!--  /  jumbotron -->
+
+<div class="container pt-4">
+
+    <!-- about-->
+        <div id="about"class="row">
+            <div class="col-lg order-lg-2">
+                  <h3 class="mb-4 text-muted">About Evergreen Community</h3>
+                  <img class="mb-4 rounded img-fluid d-none d-sm-block" <%= image_tag("Test House.jpeg", border: 0) %>
+                  <p>Evergreen HOA represents the interests of property owners in the Evergreen neighborhood. The HOA is a voluntary participation organization that supports  neighborhood initiatives with policies and best practices, functional committees and social activities with the stated objectives of enhancing security, growing community, and increasing property values.</p>
+            </div>
+            <div class="col-lg order-lg-1">
+                  <h3 class="mb-4 text-muted" >Evergreen HOA Regulations</h3>
+                  <p>Be considerate of common areas.</p>
+                  <p>Pay attention to pets</p>
+                  <p>Keep noise levels down..</p>
+                  <p>Pay your homeowners association fees. Living in a homeowners association community means that you are required to pay monthly fees to be a part of it.</p>
+                   
+            </div>
+            <div class="col-lg order-lg-3">
+                <h3 class="mb-4 text-muted">Neighbohood Info</h3>
+                  <div class="list-group">
+                    <a href="https://www.townofcary.org/" class="list-group-item list-group-item-action"><strong>Cary Town</strong>: Local and updated information </a>
+                    <a href="https://www.greatschools.org/north-carolina/cary/7674-Laurel-Park-Elementary/" class="list-group-item list-group-item-action"><strong>Elementary School</strong>: Laurel Park Elementary</a>
+                    <a href="https://www.greatschools.org/north-carolina/apex/3367-Salem-Middle/" class="list-group-item list-group-item-action"><strong>Middle School</strong>: Salem Middle</a>
+                    <a href="https://www.greatschools.org/north-carolina/cary/1907-Cary-High/" class="list-group-item list-group-item-action"><strong>High School</strong>: Cary High</a>
+                  </div>
+            </div>
+        </div>
+    <!-- /about-->
+
+  <!--     Resident Access-->
+  <section id="registration">
+       <h3> Resident Access </h3>
+
+        <%# <% if current_user %>
+        <%#= link_to 'Sign out', destroy_user_session_path, method: :delete %>
+        <%# <% else %>
+        <%= link_to 'Sign up', new_user_registration_path %>
+        <%= link_to 'Sign in', new_user_session_path %>
+        <%# <%end%>
+
+  <!--   /Resident Access-->
+</section>
+
+
+    <!--      blog-->
+
+  
+
+      <a  class="btn btn-outline-info btn-lg btn-block  text-black text-center" <%= link_to ' Share News and Events with your Neighbors!', new_post_path, class: 'nav-link'%></a>
+      <h1 id="blog" class="display-5 text-center my-5 text-muted">Evergreen News and Events </h1>
+      <%# <a class="list-group-item list-group-item-action active" data-toggle="list" href="#posts" role="tab">Home</a> %>
+
+
+      <div class="card">
+      <div class="card-header">
+      <center> <h3>July Newsletter</h3></center>
+          </div>
+          <div class="card-body" >
+          <center>
+              <h5 class="card-title">Comitee Meeting in July</h5>
+              <p class="card-text"><p>Check the las Updates on Covid19 cases in our area!</p>
+              <a href="#" class="btn btn-primary">Show More</a>
+          </center>
+      </div>
+    </div>
+  <br>
+
+  <div class="card">
+  <div class="card-header">
+  <center><h3>June Newsletter</h3></center>
+  </div>
+  <div class="card-body">
+    <center>
+      <h5 class="card-title">New payment online. Available soon!!!</h5>
+      <p class="card-text">Check how to pay online from our website!</p>
+      <a href="#" class="btn btn-primary">Show More</a>
+    </center>
+  </div>
+</div>
+<br>
+
+<div class="row">
+    <div class="col-sm-6">
+      <div class="card" style="width: 18rem;">
+        <%= image_tag("tuka.jpeg", border: 0) %>
+        <div class="card-body">
+          <p class="card-text"><h5>Los Pet!!! Name: "Lazy", House: 109 London Plain ct, last seen Friday afternoon</h5>
+          <a href="#" class="btn btn-primary">Show More</a>
+       </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card" style="width: 18rem;">
+        <%= image_tag("landscaping.jpeg", border: 0) %>
+        <div class="card-body">
+          <p class="card-text"><h5>Decorate your front door with a white tie! Showing Support for our Covid-19 heroes. Close to a tree or front porch.</h5>
+        <a href="#" class="btn btn-primary">Show More</a>
+      </div>
+    </div>
+    
+</div>
+
+
+
+
+
+
+
+
+<!--   /   blog-->
+
+
+
+
+</div><!-- /.container-->
+
+<% #<div class="container pt-5"> %>
+
+      <!--     footer-->
+
+        <div class="row py-3">
+          <div class="col-md-7">
+
+              <h3 class="mb-1">Contact us: </h3>
+              <h6><strong>Email:</strong><a href="mailto: evergreenhoaofcary@gmail.com?subject=Hi%20Evergreen!">evergreenhoaofcary@gmail.com </a></h6>
+              <h6 class="mb-1">Mailing address:</h6>
+              <h6 class="mb-1">Evergreen Homeowners Association</h6>
+              <h6 class="mb-1">17xx Cary Parkway Drive, Ste 1xx </h6>
+              <h6 class="mb-1">17xx Cary,  North Carolina  </h5> </h6>
+
+          </div>
+          </div>  <!-- /.container-->
+        <div class="col-md text-md-right">
+          <small>&copy; 2020 Evergreen HOA Website by Code the Dream</small>
+        </div>
+      <!--     /footer-->
+
+</body>
+</html>

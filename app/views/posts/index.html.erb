@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+<img class="mb-4  rounded img-fluid  max-width: 100% height: auto " <%= image_tag("jumbobanner.jpeg", border: 0) %>
+<h2>Newsletter:</h2>
+
+  <tbody>
+    <% @posts.each do |post| %>
+      <div class="container pt-2">
+
+            <h4 class="mb-2 ">News Title: <%= post.title %></h4>
+            <h4 class="mb-2 text-muted"><%= post.body %></h4>
+           
+
+            <td><%= link_to 'Show', post %></td>
+            <% if current_user && current_user.admin%>
+                  <td><%= link_to 'Edit', edit_post_path(post) %></td>
+                  <td><%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <% end %>
+
+      </div>
+  <% end %>
+  </tbody>
+
+
+
+
+<%= link_to 'New Post', new_post_path %>
+<li class='nav-item'><%= link_to 'Home', pages_home_path, class: 'nav-link' %></li>
